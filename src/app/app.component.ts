@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'moment';
+  pr = 20;
+  clicks = 0;
+  onChanged(increased: boolean) {
+      increased === true ? this.clicks++ : this.clicks--;
+  }
 }
